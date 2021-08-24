@@ -1,10 +1,12 @@
 package com.biraj.playme
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.core.app.ActivityCompat
 import com.biraj.playme.api.ServiceBuilder
 import com.biraj.playme.repository.UserRepository
 import com.google.android.material.snackbar.Snackbar
@@ -52,30 +54,30 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-//    private fun checkRunTimePermission() {
-//        if (!hasPermission()) {
-//            requestPermission()
-//        }
-//    }
+    private fun checkRunTimePermission() {
+        if (!hasPermission()) {
+            requestPermission()
+        }
+    }
 //
-//    private fun hasPermission(): Boolean {
-//        var hasPermission = true
-//        for (permission in permissions) {
-//            if (ActivityCompat.checkSelfPermission(
-//                    this,
-//                    permission
-//                ) != PackageManager.PERMISSION_GRANTED
-//            ) {
-//                hasPermission = false
-//                break
-//            }
-//        }
-//        return hasPermission
-//    }
-//
-//    private fun requestPermission() {
-//        ActivityCompat.requestPermissions(this@LoginActivity, permissions, 1)
-//    }
+    private fun hasPermission(): Boolean {
+        var hasPermission = true
+        for (permission in permissions) {
+            if (ActivityCompat.checkSelfPermission(
+                    this,
+                    permission
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                hasPermission = false
+                break
+            }
+        }
+        return hasPermission
+    }
+
+    private fun requestPermission() {
+        ActivityCompat.requestPermissions(this@LoginActivity, permissions, 1)
+    }
 
     private fun login() {
         val username = etUsername.text.toString()
