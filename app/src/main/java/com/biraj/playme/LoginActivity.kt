@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.*
 import androidx.core.app.ActivityCompat
 import com.biraj.playme.api.ServiceBuilder
+import com.biraj.playme.api.ServiceBuilder.token
 import com.biraj.playme.repository.UserRepository
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.CoroutineScope
@@ -135,7 +136,7 @@ class LoginActivity : AppCompatActivity() {
         val editor = sharedPref.edit()
         editor.putString("username", username)
         editor.putString("password", password)
-//        editor.putString("token", token)
+      editor.putString("token", token)
         editor.apply()
         editor.commit()
         Toast.makeText(
