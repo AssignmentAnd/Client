@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.biraj.playme.Adpters.Useradapters
 import com.biraj.playme.R
-import com.biraj.playme.model.Estate
+import com.biraj.playme.model.challenge
 import com.biraj.playme.repository.ArtistRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -45,7 +45,7 @@ class HomeFragments : Fragment() {
                 val response = productRepository.getAllArtist()
                 if (response.success == true) {
                     // Put all the student details in lstStudents
-                    val listUsers: Array<Estate>? = response.data
+                    val listUsers: Array<challenge>? = response.data
                     Log.d("response",response.toString());
                     withContext(Dispatchers.Main) {
                         val adapter=Useradapters( requireContext(),listUsers!!)

@@ -1,8 +1,8 @@
 package com.biraj.playme.response
 
-import com.biraj.playme.model.Estate
+import com.biraj.playme.model.challenge
 
 class AddUserResponse (
     val success :Boolean? =null,
-    val data : MutableList<Estate>? =null
+    val data : MutableList<challenge>? =null
 )

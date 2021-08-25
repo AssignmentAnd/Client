@@ -1,6 +1,6 @@
 package com.biraj.playme.model
 
-data class Estate(
+data class challenge(
     val _id: String? =null,
     val Game:String? = null,
     val Challengetitle: String ?= null,

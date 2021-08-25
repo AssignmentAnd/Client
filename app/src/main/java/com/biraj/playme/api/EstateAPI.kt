@@ -1,6 +1,6 @@
 package com.biraj.playme.api
 
-import com.biraj.playme.model.Estate
+import com.biraj.playme.model.challenge
 import com.biraj.playme.response.EstateResponse
 import com.biraj.playme.response.ImageResponse
 import okhttp3.MultipartBody
@@ -11,7 +11,7 @@ interface EstateAPI {
     @POST("estate/post")
     suspend fun insertEstate(
         @Header("Authorization") token:String,
-        @Body estate: Estate
+        @Body challenge: challenge
     ): Response<EstateResponse>
 
     @GET("p_challenge/show")

@@ -11,12 +11,12 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.biraj.playme.HireArtist
 import com.biraj.playme.R
-import com.biraj.playme.model.Estate
+import com.biraj.playme.model.challenge
 
 class  Useradapters(
 
     private val context: Context,
-    private val listEstate: Array<Estate>
+    private val listChallenge: Array<challenge>
 
 
 ): RecyclerView.Adapter<Useradapters.StoryViewHolder>() {
@@ -55,7 +55,7 @@ class  Useradapters(
     }
 
     override fun onBindViewHolder(holder: StoryViewHolder, position: Int) {
-        val artist = listEstate[position]
+        val artist = listChallenge[position]
 //        println(artist)
         holder.tvGame.text = artist.Game
         holder.tvUsername.text = artist.Username
@@ -74,7 +74,7 @@ class  Useradapters(
     }
 
     override fun getItemCount(): Int {
-        return listEstate.size
+        return listChallenge.size
 
     }
 

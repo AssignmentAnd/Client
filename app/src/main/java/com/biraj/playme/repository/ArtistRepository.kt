@@ -3,16 +3,16 @@ package com.biraj.playme.repository
 import com.biraj.playme.api.EstateAPI
 import com.biraj.playme.api.MyApiRequest
 import com.biraj.playme.api.ServiceBuilder
-import com.biraj.playme.model.Estate
+import com.biraj.playme.model.challenge
 import com.biraj.playme.response.EstateResponse
 import com.biraj.playme.response.ImageResponse
 import okhttp3.MultipartBody
 
 class  ArtistRepository: MyApiRequest() {
     private val ArtistAPI= ServiceBuilder.buildService(EstateAPI::class.java)
-    suspend fun insertArtist(estate: Estate):EstateResponse{
+    suspend fun insertArtist(challenge: challenge):EstateResponse{
         return apiRequest {
-            ArtistAPI.insertEstate(ServiceBuilder.token!!, estate)
+            ArtistAPI.insertEstate(ServiceBuilder.token!!, challenge)
         }
     }
 

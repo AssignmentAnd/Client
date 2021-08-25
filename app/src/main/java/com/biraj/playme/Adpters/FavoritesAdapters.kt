@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.biraj.playme.R
-import com.biraj.playme.model.Estate
+import com.biraj.playme.model.challenge
 
 class FavoritesAdapters (
 
     private val context: Context,
-    private val listEstate: Array<Estate>
+    private val listChallenge: Array<challenge>
 
 
 ): RecyclerView.Adapter<FavoritesAdapters.StoryViewHolder>() {
@@ -51,7 +51,7 @@ class FavoritesAdapters (
     }
 
     override fun onBindViewHolder(holder: StoryViewHolder, position: Int) {
-        val artist = listEstate[position]
+        val artist = listChallenge[position]
 //        println(artist)
         holder.tvGame.text = artist.Game
         holder.tvUsername.text = artist.Username
@@ -68,7 +68,7 @@ class FavoritesAdapters (
     }
 
     override fun getItemCount(): Int {
-        return listEstate.size
+        return listChallenge.size
 
     }
 
