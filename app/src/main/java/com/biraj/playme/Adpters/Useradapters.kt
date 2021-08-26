@@ -9,7 +9,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.biraj.playme.HireArtist
+import com.biraj.playme.challengeP
 import com.biraj.playme.R
 import com.biraj.playme.model.challenge
 
@@ -67,7 +67,7 @@ class  Useradapters(
             Toast.makeText(context," Challenge Added to WatchList !!", Toast.LENGTH_SHORT).show()
         }
         holder.btnbuy.setOnClickListener({
-            context.startActivity(Intent(context,HireArtist::class.java))
+            context.startActivity(Intent(context,challengeP::class.java))
         })
 
 

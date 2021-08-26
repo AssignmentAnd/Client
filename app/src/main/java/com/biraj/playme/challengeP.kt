@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 
-class HireArtist : AppCompatActivity() {
+class challengeP : AppCompatActivity() {
     private lateinit var etName: EditText
     private lateinit var etPhone: EditText
     private lateinit var etPrice: EditText
@@ -27,15 +27,15 @@ class HireArtist : AppCompatActivity() {
         btnSend=findViewById(R.id.btnSend)
         btnCancel=findViewById(R.id.btnCancel)
         btnSend.setOnClickListener{
-            startActivity(Intent(this@HireArtist,DashboardActivity::class.java))
-            Toast.makeText(this@HireArtist," Challenge Accepted!!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this@challengeP,DashboardActivity::class.java))
+            Toast.makeText(this@challengeP," Challenge Accepted!!", Toast.LENGTH_SHORT).show()
 //            showLowPriotyNotification()
             showHighPriorityNotification()
 
         }
 
         btnCancel.setOnClickListener{
-            startActivity(Intent(this@HireArtist,DashboardActivity::class.java))
+            startActivity(Intent(this@challengeP,DashboardActivity::class.java))
         }
     }
 //    private fun showLowPriotyNotification() {

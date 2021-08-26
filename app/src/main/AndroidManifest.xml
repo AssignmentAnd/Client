@@ -22,7 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArtistChaiyoo"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.biraj.playme.HireArtist"></activity>
+        <activity android:name="com.biraj.playme.challengeP"></activity>
         <activity android:name="com.biraj.playme.UpdateProfile" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
