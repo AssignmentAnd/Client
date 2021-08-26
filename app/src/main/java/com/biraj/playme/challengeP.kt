@@ -38,21 +38,21 @@ class challengeP : AppCompatActivity() {
             startActivity(Intent(this@challengeP,DashboardActivity::class.java))
         }
     }
-//    private fun showLowPriotyNotification() {
-//        val notificationManager= NotificationManagerCompat.from(this@HireArtist)
-//
-//        val notificationChannels= Notification(this@HireArtist)
-//        notificationChannels.createNotificationChannels()
-//
-//        val notification = NotificationCompat.Builder(this@HireArtist, notificationChannels.CHANNEL_2)
-//                 .setContentTitle("Low Priority notification")
-//            .setContentText("This is my notification Body")
-//            .setColor(Color.BLUE)
-//            .build()
-//
-//        notificationManager.notify(2,notification)
-//
-//    }
+    private fun showLowPriotyNotification() {
+        val notificationManager= NotificationManagerCompat.from(this@challengeP)
+
+        val notificationChannels= Notification(this@challengeP)
+        notificationChannels.createNotificationChannels()
+
+        val notification = NotificationCompat.Builder(this@challengeP, notificationChannels.CHANNEL_2)
+                 .setContentTitle("Low Priority notification")
+            .setContentText("This is my notification Body")
+            .setColor(Color.BLUE)
+            .build()
+
+        notificationManager.notify(2,notification)
+
+    }
 
     private fun showHighPriorityNotification() {
         val notificationManager= NotificationManagerCompat.from(this)
