@@ -6,12 +6,12 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.biraj.playme.Entity.Test
 import com.biraj.playme.Entity.User
-import com.biraj.playme.Entity.ArtistDetail
+import com.biraj.playme.Entity.Detailsss
 import com.biraj.playme.dao.UserDAO
 import com.biraj.playme.dao.UsernameDAO
 
 @Database(
-    entities = [(User::class), (ArtistDetail::class),(Test::class)],
+    entities = [(User::class), (Detailsss::class),(Test::class)],
     version = 1,
     exportSchema = false
 )

@@ -5,6 +5,7 @@ import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
 
+//Notifications
 class Notification(val context: Context) {
     val CHANNEL_1 :String ="Channel1"
     val CHANNEL_2 :String ="Channel2"

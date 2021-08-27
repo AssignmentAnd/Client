@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-class ArtistDetail (
+class Detailsss (
     var username: String? = null,
     var password: String? = null,
     var id: Int? = null,
