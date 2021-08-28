@@ -11,6 +11,8 @@ import androidx.navigation.ui.setupWithNavController
 
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+//All the designs have been made and imported
+
 class DashboardActivity : AppCompatActivity() {
     private val permissions = arrayOf(
         android.Manifest.permission.CAMERA,
@@ -24,8 +26,7 @@ class DashboardActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.flContainer)
 
-//         Passing each menu ID as a set of Ids because each
-//         menu should be considered as top level destinations.
+
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home,
