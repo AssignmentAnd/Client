@@ -8,6 +8,8 @@ import com.biraj.playme.api.ServiceBuilder
 import com.biraj.playme.repository.UserRepository
 import kotlinx.coroutines.*
 
+//splash screen are the screen that are seen at loading screen
+
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
