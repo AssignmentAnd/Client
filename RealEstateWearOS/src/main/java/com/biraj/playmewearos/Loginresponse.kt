@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 class Loginresponse (
     val success :Boolean? = null,

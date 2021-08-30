@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 import retrofit2.Response
 import retrofit2.http.Field

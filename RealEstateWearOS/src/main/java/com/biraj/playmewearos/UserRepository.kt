@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 class UserRepository: MyApiRequest() {
     //Create retrofit instance of USERAPI

@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 import org.json.JSONException
 import org.json.JSONObject

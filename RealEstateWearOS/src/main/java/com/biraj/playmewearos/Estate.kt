@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 data class Estate(
     val _id: String? =null,

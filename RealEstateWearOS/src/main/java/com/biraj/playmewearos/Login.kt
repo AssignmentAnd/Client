@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

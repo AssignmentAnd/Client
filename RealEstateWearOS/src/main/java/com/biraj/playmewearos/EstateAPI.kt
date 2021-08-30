@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 import okhttp3.MultipartBody
 import retrofit2.Response

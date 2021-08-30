@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 class ImageResponse (
     val success : Boolean?=null,

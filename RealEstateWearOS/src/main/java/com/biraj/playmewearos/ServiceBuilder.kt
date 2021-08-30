@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

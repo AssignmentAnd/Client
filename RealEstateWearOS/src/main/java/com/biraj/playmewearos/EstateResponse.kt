@@ -1,4 +1,4 @@
-package com.biraj.realestatewearos
+package com.biraj.playmewearos
 class EstateResponse (
 //    val success: Boolean? = null,
 //    val data: Array<Artist> ?= null
