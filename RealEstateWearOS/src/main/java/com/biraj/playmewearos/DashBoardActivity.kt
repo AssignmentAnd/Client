@@ -21,7 +21,7 @@ class DashBoardActivity : AppCompatActivity() {
 //                val response = productRepository.getAllArtist()
 //                if (response.success == true) {
 //                    // Put all the student details in lstStudents
-//                    val listUsers: Array<Estate>? = response.data
+//                    val listUsers: Array<Challenges>? = response.data
 //                    Log.d("response",response.toString());
 //                    withContext(Dispatchers.Main) {
 //                        val adapter= WearAdapter( this@DashBoardActivity,listUsers!!)

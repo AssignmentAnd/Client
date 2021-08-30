@@ -5,16 +5,16 @@ import retrofit2.Response
 import retrofit2.http.*
 
 interface ChallengeAPI {
-    @POST("estate/post")
+    @POST("challenges/post")
     suspend fun insertEstate(
         @Header("Authorization") token:String,
-        @Body estate: Estate
-    ): Response<EstateResponse>
+        @Body challenges: Challenges
+    ): Response<challengeResponse>
 
     @GET("p_challenge/show")
     suspend fun getAllEstate(
         @Header("Authorization") token:String
-    ): Response<EstateResponse>
+    ): Response<challengeResponse>
 
     @Multipart
     @PUT("estate/{id}/photo")

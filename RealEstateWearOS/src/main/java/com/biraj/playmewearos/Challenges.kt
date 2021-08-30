@@ -1,6 +1,6 @@
 package com.biraj.playmewearos
 
-data class Estate(
+data class Challenges(
     val _id: String? =null,
     val Game:String? = null,
     val Challengetitle: String ?= null,

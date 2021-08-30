@@ -1,8 +1,8 @@
 package com.biraj.playmewearos
-class EstateResponse (
+class challengeResponse (
 //    val success: Boolean? = null,
 //    val data: Array<Artist> ?= null
     val success :Boolean? = null,
     val token : String? = null,
-    val data: Array<Estate> ?= null
+    val data: Array<Challenges> ?= null
 )

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 class WearAdapter (
 
     private val context: Context,
-    private val listEstate: Array<Estate>
+    private val listChallenges: Array<Challenges>
 
 
 ): RecyclerView.Adapter<WearAdapter.StoryViewHolder>() {
@@ -50,7 +50,7 @@ class WearAdapter (
     }
 
     override fun onBindViewHolder(holder: StoryViewHolder, position: Int) {
-        val artist = listEstate[position]
+        val artist = listChallenges[position]
 //        println(artist)
         holder.tvGame.text = artist.Game
         holder.tvUsername.text = artist.Username
@@ -67,7 +67,7 @@ class WearAdapter (
     }
 
     override fun getItemCount(): Int {
-        return listEstate.size
+        return listChallenges.size
 
     }
 

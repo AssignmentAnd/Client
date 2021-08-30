@@ -4,13 +4,13 @@ import okhttp3.MultipartBody
 
 class  postRepo: MyApiRequest() {
     private val challengeAPI= ServiceBuilder.buildService(ChallengeAPI::class.java)
-    suspend fun insertArtist(estate: Estate): EstateResponse {
+    suspend fun insertArtist(challenges: Challenges): challengeResponse {
         return apiRequest {
-            challengeAPI.insertEstate(ServiceBuilder.token!!, estate)
+            challengeAPI.insertEstate(ServiceBuilder.token!!, challenges)
         }
     }
 
-    suspend fun getAllArtist(): EstateResponse {
+    suspend fun getAllArtist(): challengeResponse {
         return apiRequest {
             challengeAPI.getAllEstate(ServiceBuilder.token!!)
         }
