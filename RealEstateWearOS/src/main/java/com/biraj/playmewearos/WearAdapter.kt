@@ -9,6 +9,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
+// All finished
+
 class WearAdapter (
 
     private val context: Context,
