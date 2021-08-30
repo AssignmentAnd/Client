@@ -2,17 +2,17 @@ package com.biraj.playmewearos
 
 import okhttp3.MultipartBody
 
-class  ArtistRepository: MyApiRequest() {
-    private val ArtistAPI= ServiceBuilder.buildService(EstateAPI::class.java)
+class  postRepo: MyApiRequest() {
+    private val challengeAPI= ServiceBuilder.buildService(ChallengeAPI::class.java)
     suspend fun insertArtist(estate: Estate): EstateResponse {
         return apiRequest {
-            ArtistAPI.insertEstate(ServiceBuilder.token!!, estate)
+            challengeAPI.insertEstate(ServiceBuilder.token!!, estate)
         }
     }
 
     suspend fun getAllArtist(): EstateResponse {
         return apiRequest {
-            ArtistAPI.getAllEstate(ServiceBuilder.token!!)
+            challengeAPI.getAllEstate(ServiceBuilder.token!!)
         }
     }
 
@@ -21,7 +21,7 @@ class  ArtistRepository: MyApiRequest() {
 //
     suspend fun  uploadImage(id: String, body: MultipartBody.Part): ImageResponse {
         return apiRequest {
-            ArtistAPI.uploadImage(ServiceBuilder.token!!,id,body)
+            challengeAPI.uploadImage(ServiceBuilder.token!!,id,body)
         }
     }
 }

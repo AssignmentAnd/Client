@@ -17,7 +17,7 @@ class DashBoardActivity : AppCompatActivity() {
 //    private fun loadUserAdapter() {
 //        CoroutineScope(Dispatchers.IO).launch {
 ////            try {
-//                val productRepository= ArtistRepository()
+//                val productRepository= postRepo()
 //                val response = productRepository.getAllArtist()
 //                if (response.success == true) {
 //                    // Put all the student details in lstStudents
