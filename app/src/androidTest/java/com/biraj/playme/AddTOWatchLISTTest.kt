@@ -18,6 +18,8 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
+//Add to watch list test
+
 @LargeTest
 @RunWith(AndroidJUnit4::class)
 class AddTOWatchLISTTest {
