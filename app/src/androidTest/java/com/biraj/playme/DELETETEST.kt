@@ -18,6 +18,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
+//TO delete the user and post
 @LargeTest
 @RunWith(AndroidJUnit4::class)
 class DELETETEST {
